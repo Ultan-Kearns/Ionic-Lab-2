@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Movies with war
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor = "let movie of movies">
+    <ion-item>
+      <p>{{movie.Title}}</p><p>{{movie.Year}}</p>
+      <ion-img height = "250" width = "250" src = "{{movie.Poster}}"></ion-img>
+    </ion-item>
+ </ion-list>
+</ion-content>
